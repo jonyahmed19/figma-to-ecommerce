@@ -1,0 +1,26 @@
+.logo h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+.menu {
+  font-size: 18px;
+}
+.menu a {
+  font-family: lato;
+}
+.menu a svg {
+  font-size: 12px;
+  margin-top: 5px;
+}
+.menu a:hover,
+.menu .active {
+  color: #fb2e86;
+}
+.search input {
+  border: 2px solid #e7e6ef;
+  min-width: 300px;
+  padding: 10px;
+}
+.search button {
+  color: #fff;
+}

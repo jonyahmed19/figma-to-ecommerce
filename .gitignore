@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/node_modulesbak
 /.pnp
 .pnp.js
 
@@ -10,6 +11,7 @@
 
 # production
 /build
+/tailwind.config.jsfull
 
 # misc
 .DS_Store
