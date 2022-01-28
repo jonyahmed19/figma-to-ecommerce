@@ -4,3 +4,33 @@
 body {
   font-size: 16px;
 }
+
+.mainslider h2 {
+  font-family: Josefin Sans;
+}
+.mainslider {
+  font-size: 22px;
+}
+.title {
+  font-family: Josefin Sans;
+}
+.productimage img {
+  height: 200px;
+}
+.product {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+}
+.product a:hover .producttitle {
+  text-decoration: underline;
+}
+.producttitle {
+  font-family: lato;
+}
+.product-category {
+  font-family: Josefin Sans;
+  font-weight: normal;
+}
+.product button {
+  max-width: 125px;
+  align-self: center;
+}
