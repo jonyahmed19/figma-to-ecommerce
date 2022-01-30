@@ -18,7 +18,7 @@ const BottomHeader = () => {
             <Link className="flex items-baseline gap-1" to="/">
               <p>Shop</p> {<FaChevronDown />}
             </Link>
-            <Link to="/">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </div>
           <div className="search flex flex-2">
             <input type="text" className="" name="search" />

@@ -4,7 +4,6 @@ import { addItemCount, removeCart, updateQuantity } from "./cart.utils";
 
 const initialState = {
   cartItems: [],
-  updated: [],
 };
 const cartProductReducer = (state = initialState, action) => {
   switch (action.type) {

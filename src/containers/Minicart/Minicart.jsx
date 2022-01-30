@@ -14,11 +14,7 @@ const Minicart = () => {
     mt-2
     "
     >
-      {cartItems &&
-        cartItems.map((cartItem) => {
-          quantity += cartItem.quantity;
-        })}
-      {quantity}
+      {cartItems.length}
     </span>
   );
 };

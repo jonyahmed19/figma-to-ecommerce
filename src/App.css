@@ -71,3 +71,27 @@ button:hover {
 .search button {
   box-shadow: inherit;
 }
+
+/*********** contact page *********/
+.form-area form {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: auto;
+  margin-top: 50px;
+}
+.form-area input,
+.form-area textarea {
+  font-size: 18px;
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #000;
+}
+.form-area label {
+  margin-top: 26px;
+}
+
+.form-area .error {
+  border-color: #ee4c7c;
+}
