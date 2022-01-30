@@ -34,3 +34,40 @@ body {
   max-width: 125px;
   align-self: center;
 }
+
+.mini-cart {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.basket {
+  cursor: pointer;
+}
+a:hover {
+  color: #fb2e86;
+}
+.breadcumb {
+  font-family: Josefin Sans;
+}
+.cart-head,
+.cart-single {
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr 70px;
+}
+.cart-single > div {
+  display: flex;
+  align-items: center;
+}
+button {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: ease-out 0.4s;
+}
+button:hover {
+  background-color: #000000;
+  box-shadow: none;
+}
+.search button {
+  box-shadow: inherit;
+}

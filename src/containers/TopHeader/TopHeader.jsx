@@ -1,6 +1,7 @@
 import React from "react";
 import "./Topheader.css";
-
+import { Link } from "react-router-dom";
+import Cartpage from "../../pages/Cartpage/Cartpage";
 import {
   FaRegEnvelope,
   FaPhoneVolume,
@@ -9,6 +10,7 @@ import {
   FaRegUser,
   FaShoppingBasket,
 } from "react-icons/fa";
+import Minicart from "../Minicart/Minicart";
 
 const TopHeader = () => {
   return (
@@ -34,18 +36,20 @@ const TopHeader = () => {
               USD
               <FaChevronDown />
             </p>
-            <p className="flex items-center gap-2">
+            {/* <p className="flex items-center gap-2">
               Login
               <FaRegUser />
-            </p>
+            </p> */}
             <p className="flex items-center gap-2">
               Wishlist
               <FaRegHeart />
             </p>
-            <p>
+            <Link to="/cart" className="text-2xl basket">
               <FaShoppingBasket />
-            </p>
+            </Link>
           </div>
+
+          <Minicart />
         </div>
       </div>
     </div>

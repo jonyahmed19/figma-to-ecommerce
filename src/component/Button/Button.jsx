@@ -1,10 +1,19 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../redux/cart/cart.actions";
+import { useNavigate } from "react-router-dom";
 
-const IconText = ({ padding, label, cart }) => {
+const Button = ({ padding, label, cart }) => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
   const productCart = (e) => {
-    console.log("cart id:", cart.id);
-
-    e.preventDefault();
+    if (cart) {
+      dispatch(addToCart(cart));
+      navigate("/cart");
+    } else {
+      return false;
+    }
   };
 
   return (
@@ -14,4 +23,4 @@ const IconText = ({ padding, label, cart }) => {
   );
 };
 
-export default IconText;
+export default Button;
