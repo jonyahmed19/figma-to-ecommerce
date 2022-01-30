@@ -2,6 +2,7 @@ import React from "react";
 import "./MainSlider.css";
 import promotional from "../../assets/image/promotional.jpg";
 import Button from "../../component/Button/Button";
+import { Link } from "react-router-dom";
 const MainSlider = () => {
   return (
     <div
@@ -19,7 +20,15 @@ const MainSlider = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
             Magna in est adipiscing in phasellus non in justo.
           </p>
-          <Button padding="py-3 px-8 bg-pinish text-white" label="Shop Now" />
+          <Link
+            to="/shop"
+            className="py-3 
+          px-8
+          hover:bg-black hover:text-white
+          bg-pinish text-white"
+          >
+            Shop Now
+          </Link>
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ const Minicart = () => {
       className="
     mini-cart 
     bg-white 
-    text-pinish
+    text-black
     ml-1
     mt-2
     "
