@@ -1,4 +1,3 @@
-import { removeFromCart } from "./cart.actions";
 import { cartTypes } from "./cart.types";
 import { addItemCount, removeCart, updateQuantity } from "./cart.utils";
 

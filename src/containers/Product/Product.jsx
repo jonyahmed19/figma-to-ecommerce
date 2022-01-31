@@ -6,7 +6,7 @@ import ProductLabel from "../../component/ProductLabel/ProductLabel";
 import ProductPrice from "../../component/ProductPrice/ProductPrice";
 import Button from "../../component/Button/Button";
 const Product = ({ data }) => {
-  const url = encodeURI(data.title.toLowerCase());
+  const url = encodeURI(`/product/${data.title.toLowerCase()}`);
 
   return (
     <div className="product justify-evenly flex gap-2 flex-col flex-1" to={url}>

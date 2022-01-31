@@ -11,14 +11,14 @@ const middleware = [thunk, logger];
 const createStoreWithMiddleware = applyMiddleware(
   ...middleware,
   save({
-    state: ["cartItems"],
+    states: ["cartItems"],
   })
 )(createStore);
 
 const store = createStoreWithMiddleware(
   rootReducer,
   load({
-    state: ["cartItems"],
+    states: ["cartItems"],
   })
 );
 

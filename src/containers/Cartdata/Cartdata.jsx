@@ -5,7 +5,7 @@ import {
   updateCartQuantity,
 } from "../../redux/cart/cart.actions";
 import { FaTrashAlt } from "react-icons/fa";
-import Button from "../../component/Button/Button";
+import { Link } from "react-router-dom";
 
 const Cartdata = () => {
   const { cartItems } = useSelector((state) => state?.cartItems);
@@ -46,6 +46,7 @@ const Cartdata = () => {
         </div>
         <div className="cart-body">
           {cartItems.map((cartItem) => {
+            const url = encodeURI(`/product/${cartItem.title.toLowerCase()}`);
             total += cartItem.quantity * cartItem.price;
 
             return (
@@ -60,7 +61,12 @@ const Cartdata = () => {
                     alt={cartItem.image}
                   />
                 </div>
-                <div className="description text-lg">{cartItem.title}</div>
+                <Link
+                  className="flex items-center description text-lg"
+                  to={url}
+                >
+                  {cartItem.title}
+                </Link>
                 <div className="price text-lg">${cartItem.price}</div>
                 <div className="quantity text-lg">
                   <input

@@ -1,15 +1,14 @@
 import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { FaSearch } from "react-icons/fa";
+
 import "./BottomHeader.css";
 import { loadProductsAsync } from "../../redux/directory/loadproducts.thunks";
 import { useDispatch, useSelector } from "react-redux";
-
+import SearchBar from "../../component/SearchBar/SearchBar";
 const BottomHeader = () => {
   const {
     products: { data },
   } = useSelector((state) => state.products);
-
   const dispatch = useDispatch();
   useEffect(() => {
     if (!data) {
@@ -32,12 +31,8 @@ const BottomHeader = () => {
             </Link>
             <Link to="/contact">Contact</Link>
           </div>
-          <div className="search flex flex-2">
-            <input type="text" className="" name="search" />
-            <button type="button" className="py-4 px-5 bg-pinish">
-              <FaSearch />
-            </button>
-          </div>
+
+          <SearchBar />
         </div>
       </div>
     </div>
