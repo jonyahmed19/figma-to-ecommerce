@@ -46,7 +46,7 @@ const Cartdata = () => {
         </div>
         <div className="cart-body">
           {cartItems.map((cartItem) => {
-            const url = encodeURI(`/product/${cartItem.title.toLowerCase()}`);
+            const url = `/product/${cartItem.id}`;
             total += cartItem.quantity * cartItem.price;
 
             return (

@@ -146,3 +146,19 @@ button:hover {
 .search-suggestion {
   max-width: 318px;
 }
+.not-found-body {
+  height: 48vh;
+}
+.single-body .product-image img {
+  max-width: 70%;
+}
+.single-body .product-top {
+  box-shadow: 0px 0px 25px 10px #f6f4fd;
+  min-height: 600px;
+}
+.single-body .addtocart {
+  max-width: 200px;
+}
+.root {
+  overflow-y: scroll;
+}

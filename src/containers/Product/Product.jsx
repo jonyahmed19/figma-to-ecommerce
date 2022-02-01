@@ -5,8 +5,9 @@ import ProductTitle from "../../component/ProductTitle/ProductTitle";
 import ProductLabel from "../../component/ProductLabel/ProductLabel";
 import ProductPrice from "../../component/ProductPrice/ProductPrice";
 import Button from "../../component/Button/Button";
+import Review from "../../component/Review/Review";
 const Product = ({ data }) => {
-  const url = encodeURI(`/product/${data.title.toLowerCase()}`);
+  const url = `/product/${data.id}`;
 
   return (
     <div className="product justify-evenly flex gap-2 flex-col flex-1" to={url}>
@@ -16,8 +17,8 @@ const Product = ({ data }) => {
           <ProductTitle name={data.title} />
         </Link>
         <ProductLabel label={data.category} />
+        <Review size={20} value={data?.rating?.rate} />
         <ProductPrice price={data.price} />
-
         <Button
           label={"Add to Cart"}
           cart={data}

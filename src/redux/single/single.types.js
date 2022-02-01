@@ -1,0 +1,7 @@
+const singleTypes = {
+  SINGLE_LOAD_PENDING: "SINGLE_LOAD_PENDING",
+  SINGLE_LOAD_SUCCESS: "SINGLE_LOAD_SUCCESS",
+  SINGLE_LOAD_ERROR: "SINGLE_LOAD_ERROR",
+};
+
+export default singleTypes;

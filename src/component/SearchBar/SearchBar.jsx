@@ -3,7 +3,10 @@ import { FaSearch } from "react-icons/fa";
 import { useSelector, useDispatch } from "react-redux";
 import { searchSuggestion } from "../../redux/search/search.actions";
 import SearchSuggest from "../SearchSuggestion/SearchSuggest";
+import { useNavigate } from "react-router-dom";
+
 const SearchBar = () => {
+  const navigate = useNavigate();
   const {
     products: { data },
   } = useSelector((state) => state.products);
@@ -11,9 +14,11 @@ const SearchBar = () => {
   const dispatch = useDispatch();
 
   const [blur, setBlur] = useState(false);
+  const [text, setText] = useState("");
 
   const searchValue = (e) => {
     const value = e.target.value;
+    setText(value);
     dispatch(searchSuggestion({ data, value }));
     setBlur(true);
   };
@@ -23,7 +28,9 @@ const SearchBar = () => {
     }, 300);
   };
   const searchSubmit = (e) => {
-    console.log("submitted");
+    if (text.length > 0) {
+      navigate("/search");
+    }
     e.preventDefault();
   };
 

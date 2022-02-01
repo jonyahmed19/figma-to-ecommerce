@@ -12,6 +12,7 @@ module.exports = {
       black: "#000000",
       footer: "#E7E4F8",
       footertxt: "#9DA0AE",
+      singlebtm: "#F9F8FE",
     },
     extend: {},
   },
