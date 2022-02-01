@@ -10,9 +10,9 @@ const MainSlider = () => {
       style={{ backgroundImage: `url(${promotional})` }}
     >
       <div className="custom-container mx-auto">
-        <div className="flex items-start gap-10 flex-col mainslider-inner">
+        <div className="flex items-start py-12 md:py-20 gap-5 md:gap-10 flex-col mainslider-inner">
           <p className="text-pinish">Best Furniture For Your Castle....</p>
-          <h2 className="text-6xl font-bold leading-snug">
+          <h2 className=" text-3xl md:text-6xl font-bold leading-snug">
             New Furniture Collection
             <br /> Trends in 2022
           </h2>

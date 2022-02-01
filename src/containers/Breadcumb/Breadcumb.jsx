@@ -5,9 +5,9 @@ const Breadcumb = ({ label }) => {
   const location = useLocation();
 
   return (
-    <div className="breadcumb bg-pinkbg py-24">
+    <div className="breadcumb bg-pinkbg py-10 md:py-24">
       <div className="custom-container mx-auto">
-        <h2 className="text-3xl font-bold mb-2">{label}</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-2">{label}</h2>
         <p className="text-md text-bold">
           <Link to="/">Home</Link>
           <span className="text-pinish capitalize">

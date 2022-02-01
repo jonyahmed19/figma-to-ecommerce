@@ -1,5 +1,6 @@
 .custom-container {
   max-width: 1180px;
+  width: 90%;
 }
 body {
   font-size: 16px;
@@ -159,6 +160,54 @@ button:hover {
 .single-body .addtocart {
   max-width: 200px;
 }
-.root {
+body {
   overflow-y: scroll;
+}
+.topheader a:hover {
+  color: #e3dff7;
+}
+
+/********** bottom header **********/
+
+.logo h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+.menu {
+  font-size: 18px;
+}
+.menu a {
+  font-family: lato;
+}
+.menu a svg {
+  font-size: 12px;
+  margin-top: 5px;
+}
+.menu a:hover,
+.menu .active {
+  color: #fb2e86;
+}
+.search input {
+  border: 2px solid #e7e6ef;
+  min-width: 300px;
+  padding: 10px;
+}
+.search button {
+  color: #fff;
+}
+
+@media screen and (max-width: 900px) {
+  .search input {
+    min-width: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .search input {
+    min-width: 100px;
+    max-width: 150px;
+    padding: 0 5px;
+  }
+  .mainslider {
+    font-size: 17px;
+  }
 }

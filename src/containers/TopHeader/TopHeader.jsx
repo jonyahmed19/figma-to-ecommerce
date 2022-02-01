@@ -7,7 +7,6 @@ import {
   FaPhoneVolume,
   FaChevronDown,
   FaRegHeart,
-  FaRegUser,
   FaShoppingBasket,
 } from "react-icons/fa";
 import Minicart from "../Minicart/Minicart";
@@ -18,21 +17,25 @@ const TopHeader = () => {
       <div className="custom-container mx-auto">
         <div className="flex">
           <div className="flex-1 flex gap-5 items-center">
-            <p className="flex items-center gap-2">
+            <a
+              className="flex items-center gap-2"
+              href="mailto:example@hotmail.com"
+            >
               <FaRegEnvelope />
               example@hotmail.com
-            </p>
-            <p className="flex items-center gap-2">
+            </a>
+
+            <a className="flex items-center gap-2" href="tel:123456789">
               <FaPhoneVolume />
               (12345)67890
-            </p>
+            </a>
           </div>
           <div className="flex-1 flex gap-5 items-center justify-end">
-            <p className="flex items-center gap-2">
+            <p className="md:flex hidden items-center gap-2">
               English
               <FaChevronDown />
             </p>
-            <p className="flex items-center gap-2">
+            <p className="md:flex hidden items-center gap-2">
               USD
               <FaChevronDown />
             </p>
@@ -40,10 +43,10 @@ const TopHeader = () => {
               Login
               <FaRegUser />
             </p> */}
-            <p className="flex items-center gap-2">
+            {/* <p className="flex items-center gap-2">
               Wishlist
               <FaRegHeart />
-            </p>
+            </p> */}
             <Link to="/cart" className="text-2xl basket">
               <FaShoppingBasket />
             </Link>

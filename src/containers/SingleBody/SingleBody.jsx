@@ -3,9 +3,9 @@ import Button from "../../component/Button/Button";
 import Review from "../../component/Review/Review";
 const SingleBody = ({ single: { single } }) => {
   return (
-    <div className="single-body my-32">
+    <div className="single-body my-20 mt:my-32">
       <div className="custom-container mx-auto">
-        <div className="product-top grid grid-cols-2 gap-2 p-12">
+        <div className="product-top grid grid-cols-1 md:grid-cols-2 gap-2 p-12">
           <div className="product-image flex justify-center">
             <img src={single.image} alt={single.title} />
           </div>
@@ -15,7 +15,7 @@ const SingleBody = ({ single: { single } }) => {
             </h2>
 
             <div>
-              <Review size="22" value={single?.rating?.rate} />
+              <Review size={22} value={single?.rating?.rate} />
 
               <span>({single?.rating?.count})</span>
             </div>
@@ -33,7 +33,7 @@ const SingleBody = ({ single: { single } }) => {
           </div>
         </div>
       </div>
-      <div className="product-bottom mt-32 py-20 bg-singlebtm">
+      <div className="product-bottom  mt-16 md:mt-32 py-12 md:py-20 bg-singlebtm">
         <div className="custom-container mx-auto">
           <p className="text-lg">
             {single.description +

@@ -35,7 +35,7 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="search relative flex flex-col flex-2">
+    <div className="search relative order-3 md:order-3 flex flex-col flex-2">
       <form onSubmit={searchSubmit} className="flex flex-2">
         <input
           onBlur={searchBlur}

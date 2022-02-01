@@ -11,7 +11,9 @@ const Product = ({ data }) => {
 
   return (
     <div className="product justify-evenly flex gap-2 flex-col flex-1" to={url}>
-      <ProductImage src={data.image} />
+      <Link to={url}>
+        <ProductImage src={data.image} />
+      </Link>
       <div className="product-bottom flex gap-2 flex-col p-4 mt-3">
         <Link to={url}>
           <ProductTitle name={data.title} />

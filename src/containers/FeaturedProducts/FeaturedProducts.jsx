@@ -8,10 +8,10 @@ const FeaturedProducts = () => {
     (state) => state.products
   );
   return (
-    <div className="featured-products my-24">
+    <div className="featured-products my-14 md:my-24">
       <div className="custom-container mx-auto">
         <Title label="Featured Products" />
-        <div className="product-group flex gap-12 mt-20">
+        <div className="product-group grid grid-cols-2  md:flex gap-10 md:gap-12 mt-14 md:mt-20">
           {products?.data &&
             products?.data
               .slice(0, 4)
