@@ -16,7 +16,7 @@ const TopHeader = () => {
     <div className="topheader bg-voilate py-4">
       <div className="custom-container mx-auto">
         <div className="flex">
-          <div className="flex-1 flex gap-5 items-center">
+          <div className="flex-1 flex gap-2 flex-wrap md:gap-5 items-center">
             <a
               className="flex items-center gap-2"
               href="mailto:example@hotmail.com"

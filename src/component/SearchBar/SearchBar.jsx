@@ -36,7 +36,10 @@ const SearchBar = () => {
 
   return (
     <div className="search relative order-3 md:order-3 flex flex-col flex-2">
-      <form onSubmit={searchSubmit} className="flex flex-2">
+      <form
+        onSubmit={searchSubmit}
+        className="justify-center md:justify-start flex flex-2"
+      >
         <input
           onBlur={searchBlur}
           onChange={searchValue}

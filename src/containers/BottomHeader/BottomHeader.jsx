@@ -30,13 +30,13 @@ const BottomHeader = () => {
   return (
     <div className="bottomheader bg-white py-5">
       <div className="custom-container mx-auto">
-        <div className="flex justify-between gap-8 md:gap-20">
-          <div className="logo order-2 md:order-1 flex flex-2">
+        <div className="grid grid-cols-1 md:flex justify-between gap-6 md:gap-20">
+          <div className="logo order-1 justify-center md:justify-start flex flex-2">
             <Link to="/">
               <h1 className="font-sans">Hekto</h1>
             </Link>
           </div>
-          <div className="menu flex order-1 md:order-2 flex-1 gap-10 items-center">
+          <div className="menu flex order-2 md:order-2 flex-1 gap-10 items-center">
             {browserWidth ? (
               links
             ) : (
