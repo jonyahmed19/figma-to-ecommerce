@@ -6,7 +6,7 @@ import SearchBar from "../../component/SearchBar/SearchBar";
 import { slide as Menu } from "react-burger-menu";
 
 const BottomHeader = () => {
-  const browserWidth = window.innerWidth > 1024 ? true : false;
+  const browserWidth = window.innerWidth > 1023 ? true : false;
   const {
     products: { data },
   } = useSelector((state) => state.products);

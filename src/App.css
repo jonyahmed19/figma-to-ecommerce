@@ -201,12 +201,22 @@ body {
     min-width: 200px;
   }
 }
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .bottomheader .logo {
+    margin-left: 200px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   /* .search input {
     min-width: 100px;
     max-width: 150px;
     padding: 0 5px;
   } */
+
+  .bottomheader .logo {
+    margin-left: 0;
+  }
   .search input {
     min-width: 80%;
     max-width: 80%;
