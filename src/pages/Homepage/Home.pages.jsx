@@ -5,6 +5,8 @@ import MainSlider from "../../containers/MainSlider/MainSlider";
 import FeaturedProducts from "../../containers/FeaturedProducts/FeaturedProducts";
 import Footer from "../../containers/Footer/Footer";
 import { useSelector } from "react-redux";
+import HomeFilter from "../../containers/HomeFilter/HomeFilter";
+
 const Homepage = () => {
   const { isLoading } = useSelector((state) => state.products);
 
@@ -13,7 +15,14 @@ const Homepage = () => {
       <TopHeader />
       <BottomHeader />
       <MainSlider />
-      {isLoading ? <div className="loader">Loading</div> : <FeaturedProducts />}
+      {isLoading ? (
+        <div className="loader">Loading</div>
+      ) : (
+        <>
+          <FeaturedProducts />
+          <HomeFilter />
+        </>
+      )}
       <Footer />
     </div>
   );

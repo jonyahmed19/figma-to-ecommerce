@@ -196,6 +196,22 @@ body {
   color: #fff;
 }
 
+/*********** home filter **********/
+
+.home-filter button {
+  box-shadow: none;
+  color: #151875;
+  font-size: 18px;
+  font-family: Lato;
+  border-bottom: 1px solid transparent;
+}
+.home-filter button:hover,
+.home-filter button.active {
+  background-color: transparent;
+  border-bottom: 1px solid #fb2e86;
+  color: #fb2e86;
+}
+
 @media screen and (max-width: 900px) {
   .search input {
     min-width: 200px;
