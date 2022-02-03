@@ -4,6 +4,7 @@ import TopHeader from "../../containers/TopHeader/TopHeader";
 import BottomHeader from "../../containers/BottomHeader/BottomHeader";
 import Breadcumb from "../../containers/Breadcumb/Breadcumb";
 import Footer from "../../containers/Footer/Footer";
+import BrandArea from "../../containers/BrandArea/BrandArea";
 
 const Contactpage = () => {
   const {
@@ -62,6 +63,7 @@ const Contactpage = () => {
           }
         </div>
       </div>
+      <BrandArea />
       <Footer />
     </div>
   );
