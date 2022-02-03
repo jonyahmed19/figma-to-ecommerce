@@ -6,6 +6,8 @@ import FeaturedProducts from "../../containers/FeaturedProducts/FeaturedProducts
 import Footer from "../../containers/Footer/Footer";
 import { useSelector } from "react-redux";
 import HomeFilter from "../../containers/HomeFilter/HomeFilter";
+import PromoArea from "../../containers/PromoArea/PromoArea";
+import BrandArea from "../../containers/BrandArea/BrandArea";
 
 const Homepage = () => {
   const { isLoading } = useSelector((state) => state.products);
@@ -21,6 +23,8 @@ const Homepage = () => {
         <>
           <FeaturedProducts />
           <HomeFilter />
+          <PromoArea />
+          <BrandArea />
         </>
       )}
       <Footer />
