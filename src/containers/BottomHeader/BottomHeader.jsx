@@ -10,6 +10,7 @@ const BottomHeader = () => {
   const browserWidth = useMediaQuery({
     query: "(max-width: 1024px)",
   });
+  console.log("useMediaQuery", browserWidth);
   const {
     products: { data },
   } = useSelector((state) => state.products);
