@@ -6,6 +6,7 @@ import {
 } from "../../redux/cart/cart.actions";
 import { FaTrashAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import StripeButton from "../../component/StripeButton/StripeButton";
 
 const Cartdata = () => {
   const { cartItems } = useSelector((state) => state?.cartItems);
@@ -23,9 +24,6 @@ const Cartdata = () => {
         id: id,
       })
     );
-  };
-  const placeOrder = () => {
-    console.log("placed the order");
   };
 
   let total = 0;
@@ -97,13 +95,18 @@ const Cartdata = () => {
           <p className="text-2xl">Totel: ${Math.round(total * 100) / 100}</p>
         </div>
         <div className="cart-bottom flex justify-end">
-          <button
-            onClick={placeOrder}
-            className="py-3 px-8 text-xl bg-pinish text-white"
-            type="button"
-          >
-            Place Order
-          </button>
+          <StripeButton price={total} />
+
+          {/* <Elements stripe={stripePromise} options={options}>
+            <button
+              onClick={placeOrder}
+              className="py-3 px-8 text-xl bg-pinish text-white"
+              type="button"
+            >
+              Place Order
+            </button>
+            {/* <CheckoutForm /> *
+          </Elements> */}
         </div>
       </div>
     </div>
