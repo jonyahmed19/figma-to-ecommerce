@@ -4,9 +4,12 @@ import { loadProductsAsync } from "../../redux/directory/loadproducts.thunks";
 import { useDispatch, useSelector } from "react-redux";
 import SearchBar from "../../component/SearchBar/SearchBar";
 import { slide as Menu } from "react-burger-menu";
+import { useMediaQuery } from "react-responsive";
 
 const BottomHeader = () => {
-  const browserWidth = window.innerWidth > 1023 ? true : false;
+  const browserWidth = useMediaQuery({
+    query: "(max-width: 1024px)",
+  });
   const {
     products: { data },
   } = useSelector((state) => state.products);
@@ -37,7 +40,7 @@ const BottomHeader = () => {
             </Link>
           </div>
           <div className="menu flex order-2 md:order-2 flex-1 gap-10 items-center">
-            {browserWidth ? (
+            {!browserWidth ? (
               links
             ) : (
               <Menu noOverlay width={200}>
