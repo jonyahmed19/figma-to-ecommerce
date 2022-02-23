@@ -18,8 +18,6 @@ const SingleProduct = () => {
     dispatch(singleFetch(productId));
   }, []);
 
-  console.log("single", single);
-
   return (
     <div className="single-page">
       <TopHeader />

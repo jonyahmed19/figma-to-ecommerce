@@ -9,7 +9,7 @@ const SearchSuggest = () => {
     return (
       <div className="absolute top-12 search-suggestion flex flex-col bg-black/50 max-h-20 overflow-y-auto">
         {search.map((item) => {
-          const url = encodeURI(`/product/${item.title.toLowerCase()}`);
+          const url = encodeURI(`/product/${item.id}`);
           return (
             <Link
               key={item.id}
