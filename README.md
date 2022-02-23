@@ -1,6 +1,6 @@
 # Figma to Ecommerce
 
-### [Live Site](https://gericht-restaurant.com/)
+### [Live Site](hhttps://hekto.herokuapp.com/)
 
 ![Figma To Ecommerce](https://i.ibb.co/zF7qrZs/Home-Page.png)
 
@@ -14,4 +14,4 @@
 - Localstorage
 - Stripe Checkout
 
-### [Live Site](https://gericht-restaurant.com/)
+### [Live Site](https://hekto.herokuapp.com/)
