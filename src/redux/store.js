@@ -4,7 +4,11 @@ import rootReducer from "./root-reducer";
 import thunk from "redux-thunk";
 import logger from "redux-logger";
 
-const middleware = [thunk, logger];
+const middleware = [thunk];
+
+if (process.env.NODE_ENV == "development") {
+  middleware.push(logger);
+}
 
 /**********Localstore save and retriving codes */
 
