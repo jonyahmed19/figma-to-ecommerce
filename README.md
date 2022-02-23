@@ -1,6 +1,6 @@
 # Figma to Ecommerce
 
-### [Live Site](hhttps://hekto.herokuapp.com/)
+### [Live Site](https://hekto.herokuapp.com/)
 
 ![Figma To Ecommerce](https://i.ibb.co/zF7qrZs/Home-Page.png)
 
