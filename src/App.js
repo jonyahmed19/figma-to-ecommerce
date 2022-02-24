@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import ErrorBoundries from "./component/ErrorBoundries/ErrorBoundries";
 
 const Home = React.lazy(() => import("./pages/Homepage/Home.pages"));
 const Cartpage = React.lazy(() => import("./pages/Cartpage/Cartpage"));
@@ -17,17 +18,19 @@ const SingleProduct = React.lazy(() =>
 function App() {
   return (
     <div className="App">
-      <Suspense fallback={<div className="loader">Loading</div>}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/cart" element={<Cartpage />} />
-          <Route path="/contact" element={<Contactpage />} />
-          <Route path="/shop" element={<Shoppage />} />
-          <Route path="/search" element={<SearchResult />} />
-          <Route path="/product/:productId" element={<SingleProduct />} />
-          <Route path="*" element={<Notfound />} />
-        </Routes>
-      </Suspense>
+      <ErrorBoundries>
+        <Suspense fallback={<div className="loader">Loading</div>}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/cart" element={<Cartpage />} />
+            <Route path="/contact" element={<Contactpage />} />
+            <Route path="/shop" element={<Shoppage />} />
+            <Route path="/search" element={<SearchResult />} />
+            <Route path="/product/:productId" element={<SingleProduct />} />
+            <Route path="*" element={<Notfound />} />
+          </Routes>
+        </Suspense>
+      </ErrorBoundries>
     </div>
   );
 }
