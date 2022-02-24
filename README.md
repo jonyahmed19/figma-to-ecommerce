@@ -7,6 +7,7 @@
 ## Tools Used
 
 - React
+- TailwindCSS
 - Redux
 - Redux Thunk
 - React Router 6
